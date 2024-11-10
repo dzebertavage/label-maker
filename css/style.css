@@ -16,8 +16,25 @@ html {
     justify-content: center;
 }
 
+label {
+    margin-right: 2rem;
+}
+
+#coffeeSelect {
+    size: 2;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+}
+
 .options-container {
     background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 800px;
     max-height: 800px;
     width: 800px;
