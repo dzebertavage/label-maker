@@ -87,15 +87,29 @@ label {
     justify-content: center;
     align-items: center;
     flex-grow: 5;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 .sell-by-date {
     background-color: lightsalmon;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-grow: 4;
+}
+
+.sell-by-text {
+    background-color: aquamarine;
+    flex-grow: 1;
+    font-size: 3.5rem;
+}
+
+.sell-by {
+    background-color: rgb(255, 149, 10);
+    flex-grow: 12;
+    font-size: 3.5rem;
 }
 
 .phone-web {
@@ -115,6 +129,7 @@ label {
     align-items: center;
     flex-grow: 2;
     border-radius: 0 0 15px 15px;
+    font-size: 1.7rem;
 }
 
 .footer {
