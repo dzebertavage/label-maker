@@ -40,13 +40,81 @@ label {
     width: 800px;
     max-width: 800px;
 }
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .label-preview-container {
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 800px;
     max-height: 800px;
     width: 800px;
     max-width: 800px;
+}
+
+.label-background {
+    background-color: #fff;
+    border: 1px solid #8a8a8a;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    max-height: 750px;
+    width: 500px;
+    max-width: 500px;
+}
+
+.logo {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.logo-container {
+    padding: 1.5rem 0;
+}
+
+.coffee-name {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+}
+
+.sell-by-date {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+}
+
+.phone-web {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.coffee-weight {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    border-radius: 0 0 15px 15px;
 }
 
 .footer {
