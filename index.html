@@ -12,14 +12,22 @@
         <div class="options-container">
             <div class="dropdown-container">
                 <label for="coffeeSelect">Choose a coffee:</label>
-                <select id="coffeeSelect" name="coffeeCode">
+                <select id="coffeeSelect" name="coffeeCode" onfocus='this.size=10;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
                     <option value="selectACoffee">-- Please select a coffee --</option>
-                    <option value="aro">ARO</option>
-                    <option value="cly">CLY</option>
-                    <option value="dho">DHO</option>
-                    <option value="elsal">ELSAL</option>
-                    <option value="eth">ETH</option>
-                    <option value="ssgua">SSGUA</option>
+                    <optgroup label="Wholesale Coffees">
+                        <option>MJV</option>
+                        <option>DFR</option>
+                        <option>DHO</option>
+                        <option>ELSAL</option>
+                        <option>ETH</option>
+                        <option>SSGUA</option>
+                    </optgroup>
+                    <optgroup label="Miscellaneous">
+                        <option>CLY</option>
+                        <option>DCLY</option>
+                        <option>ARO</option>
+                        <option>HOL</option>
+                    </optgroup>
                 </select>
             </div>
         </div>

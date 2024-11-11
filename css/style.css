@@ -33,7 +33,7 @@ label {
     background-color: lightgreen;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 800px;
     max-height: 800px;
