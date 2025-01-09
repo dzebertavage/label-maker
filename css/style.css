@@ -47,6 +47,24 @@ label {
     max-width: 800px;
 }
 
+.coffee-type {
+    display: flex;
+}
+
+fieldset {
+    border: 1px solid #000;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+legend {
+    padding: 0.3rem 0.6rem;
+}
+
+.coffee-type-label {
+    padding-left: 0.3rem;
+}
+
 .logo-container {
     display: flex;
     flex-direction: column;
