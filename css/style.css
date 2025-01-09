@@ -24,6 +24,10 @@ label {
     size: 2;
 }
 
+.date-container {
+    display: flex;
+}
+
 .dropdown-container {
     display: flex;
     justify-content: center;
@@ -35,12 +39,14 @@ label {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
     padding: 1rem 0 0 0;
     height: 800px;
     max-height: 800px;
     width: 800px;
     max-width: 800px;
 }
+
 .logo-container {
     display: flex;
     flex-direction: column;

@@ -10,6 +10,16 @@
 <body>
     <div class="label-maker-container">
         <div class="options-container">
+            <div class="date-container">
+                <div class="check-date">
+                    <input type="checkbox" id="changeDate" name="changeDate" value="changeDate">
+                    <label for="changeDate">Change date?</label>
+                </div>
+                <div class="new-date">
+                    <label for="newDate">Enter new date:</label>
+                    <input type="date" id="newDate" name="newDate" disabled>
+                </div>
+            </div>
             <div class="dropdown-container">
                 <label for="coffeeSelect">Choose a coffee:</label>
                 <select id="coffeeSelect" name="coffeeCode" onfocus='this.size=10;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
@@ -29,10 +39,6 @@
                         <option>HOL</option>
                     </optgroup>
                 </select>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="changeDate" name="changeDate" value="changeDate">
-                <label for="changeDate">Change date?</label>
             </div>
         </div>
         <div class="label-preview-container">
