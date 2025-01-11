@@ -7,6 +7,10 @@ const groundRadio = document.querySelector("#ground");
 const changeDateCheck = document.querySelector("#changeDate");
 const newDateField = document.querySelector("#newDate");
 const coffeeDropDown = document.querySelector("#coffeeSelect");
+const groundBanner = document.querySelector(".ground-coffee-banner");
+const groundSelectDiv = document.querySelector(".groundSelect");
+const groundSelectRange = document.querySelector("#groundSelectRange");
+const groundNumPreview = document.querySelector(".groundNumPreview");
 
 const sellByDiv = document.querySelector(".sell-by");
 const coffeeNameDiv = document.querySelector(".coffee-name");
@@ -24,7 +28,15 @@ function generateFooterContent() {
 generateFooterContent();
 sellByDiv.textContent = sellByDate;
 
+function updateRangeNumber(val) {
+    let tempDiv = document.querySelector(".ground-coffee-banner");
+    tempDiv.textContent = "Ground #" + val;
+    groundNumPreview.textContent = val;
+}
+
 wholeRadio.addEventListener("click", () => {
+    groundBanner.style.display = "none";
+    groundSelectDiv.style.display = "none";
     changeDateCheck.checked = false;
     newDateField.disabled = true;
     newDateField.value = "";
@@ -33,6 +45,8 @@ wholeRadio.addEventListener("click", () => {
 });
 
 groundRadio.addEventListener("click", () => {
+    groundBanner.style.display = "block";
+    groundSelectDiv.style.display = "flex";
     changeDateCheck.checked = false;
     newDateField.disabled = true;
     newDateField.value = "";

@@ -24,6 +24,11 @@
                     </div>
                 </fieldset>
             </div>
+            <div class="groundSelect">
+                <label for="groundSelectRange">Ground #:</label>
+                <input id ="groundSelectRange" type="range" min="1" max="12" step="1" oninput="updateRangeNumber(this.value);">
+                <div class="groundNumPreview"></div>
+            </div>
             <div class="date-container">
                 <div class="check-date">
                     <input type="checkbox" id="changeDate" name="changeDate">
@@ -73,6 +78,7 @@
                 <div class="logo-container">
                     <img class="logo" src="img/348s.jpg" alt="quartermaine coffee logo">
                 </div>
+                <div class="ground-coffee-banner"></div>
                 <div class="coffee-name"></div>
                 <div class="sell-by-date">
                     <div class="sell-by-text">Sell by:</div>

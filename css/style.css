@@ -51,6 +51,14 @@ label {
     display: flex;
 }
 
+.groundSelect {
+    display: none;
+}
+
+.groundNumPreview {
+    padding-left: 1rem;
+}
+
 fieldset {
     border: 1px solid #000;
     display: flex;
@@ -116,6 +124,15 @@ legend {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.ground-coffee-banner {
+    background-color: #000;
+    color: #fff;
+    display: none;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
 .sell-by-date {
