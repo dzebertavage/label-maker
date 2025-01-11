@@ -6,8 +6,10 @@ const wholeRadio = document.querySelector("#wholeBean");
 const groundRadio = document.querySelector("#ground");
 const changeDateCheck = document.querySelector("#changeDate");
 const newDateField = document.querySelector("#newDate");
+const coffeeDropDown = document.querySelector("#coffeeSelect");
 
 const sellByDiv = document.querySelector(".sell-by");
+const coffeeNameDiv = document.querySelector(".coffee-name");
 const labelMakerContainer = document.querySelector(".label-maker-container");
 const optionsContainer = document.querySelector(".options-container");
 const labelPreviewContainer = document.querySelector(".label-preview-container");
@@ -51,4 +53,9 @@ newDateField.addEventListener("change", () => {
     let newDateFormatted = newDateField.value;
     let sliced = newDateFormatted.slice(5, 7) + "/" + newDateFormatted.slice(8, 10) + "/" + newDateFormatted.slice(2, 4);
     sellByDiv.textContent = sliced;
+});
+
+coffeeDropDown.addEventListener("change", () => {
+    let newCoffeeName = coffeeDropDown.value;
+    coffeeNameDiv.textContent = newCoffeeName;
 });

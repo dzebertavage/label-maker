@@ -114,6 +114,8 @@ legend {
     flex-grow: 5;
     font-size: 3.5rem;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .sell-by-date {
