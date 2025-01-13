@@ -24,6 +24,19 @@
                     </div>
                 </fieldset>
             </div>
+            <div class="pounds">
+                <fieldset>
+                    <legend>Pounds</legend>
+                    <div class="five-pounds">
+                        <input type="radio" id="fivePounds" name="fivePounds" value="fivePounds" checked>
+                        <label for="fivePounds" class="pounds-label">5lbs</label>
+                    </div>
+                    <div class="one-pound">
+                        <input type="radio" id="onePound" name="onePound" value="onePound">
+                        <label for="onePound" class="pounds-label">1lb</label>
+                    </div>
+                </fieldset>
+            </div>
             <div class="groundSelect">
                 <label for="groundSelectRange">Ground #:</label>
                 <input id ="groundSelectRange" type="range" min="1" max="12" step="1" oninput="updateRangeNumber(this.value);">
@@ -55,7 +68,7 @@
                     <option value="DECAF HOUSE">DHO</option>
                     <option value="DECAF HOLIDAY">DHOL</option>
                     <option value="DECAF SUMATRA">DSM</option>
-                    <option value="DECAF VINE ST">DVS</option>
+                    <option value="DECAF VINE STREET">DVS</option>
                     <option value="ESPRESSO">ESP</option>
                     <option value="ETHIOPIA">ETH</option>
                     <option value="FRENCH ROAST">FRE</option>
@@ -67,11 +80,11 @@
                     <option value="KENYA">KEN</option>
                     <option value="PAPUA NEW GUINEA">PNG</option>
                     <option value="Q'MAINE COLD BREW">QCOLD</option>
-                    <option value="RED LINE">RED</option>
+                    <option value="RED LINE BLEND">RED</option>
                     <option value="SS COSTA RICA">SSCRA</option>
                     <option value="SS GUATEMALA">SSGUA</option>
                     <option value="SS SUMATRA">SSSUM</option>
-                    <option value="VINE STREET">VINE</option>
+                    <option value="VINE STREET BLEND">VINE</option>
                     <option value="VIENNESE">VNS</option>
                 </select>
             </div>
@@ -91,7 +104,7 @@
                     <p class="phone">www.quartermaine.com | 301-230-4600 x1</p>
                 </div>
                 <div class="coffee-weight">
-                    <p>Net Weight 80oz / 5lbs / 2.27kg</p>
+                    <p class="weight"></p>
                 </div>
             </div>
         </div>

@@ -11,6 +11,9 @@ const groundBanner = document.querySelector(".ground-coffee-banner");
 const groundSelectDiv = document.querySelector(".groundSelect");
 const groundSelectRange = document.querySelector("#groundSelectRange");
 const groundNumPreview = document.querySelector(".groundNumPreview");
+const fivePoundsRadio = document.querySelector("#fivePounds");
+const onePoundRadio = document.querySelector("#onePound");
+const weight = document.querySelector(".weight");
 
 const sellByDiv = document.querySelector(".sell-by");
 const coffeeNameDiv = document.querySelector(".coffee-name");
@@ -27,6 +30,7 @@ function generateFooterContent() {
 
 generateFooterContent();
 sellByDiv.textContent = sellByDate;
+weight.textContent = "Net Weight 80oz / 5lbs / 2.27kg";
 
 function updateRangeNumber(val) {
     let tempDiv = document.querySelector(".ground-coffee-banner");
@@ -52,6 +56,16 @@ groundRadio.addEventListener("click", () => {
     newDateField.value = "";
     sellByDate = moment().add(1, `month`).format("MM/DD/YY");
     sellByDiv.textContent = sellByDate;
+});
+
+fivePoundsRadio.addEventListener("click", () => {
+    onePoundRadio.checked = false;
+    weight.textContent = "Net Weight 80oz / 5lbs / 2.27kg"
+});
+
+onePoundRadio.addEventListener("click", () => {
+    fivePoundsRadio.checked = false;
+    weight.textContent = "Net Weight 16oz / 1lb / 454g"
 });
 
 changeDateCheck.addEventListener("change", () => {
