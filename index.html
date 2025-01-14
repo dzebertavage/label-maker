@@ -24,6 +24,11 @@
                     </div>
                 </fieldset>
             </div>
+            <div class="groundSelect">
+                <label for="groundSelectRange">Ground #:</label>
+                <input id ="groundSelectRange" type="range" min="1" max="12" step="1" oninput="updateRangeNumber(this.value);">
+                <div class="groundNumPreview"></div>
+            </div>
             <div class="pounds">
                 <fieldset>
                     <legend>Pounds</legend>
@@ -36,11 +41,6 @@
                         <label for="onePound" class="pounds-label">1lb</label>
                     </div>
                 </fieldset>
-            </div>
-            <div class="groundSelect">
-                <label for="groundSelectRange">Ground #:</label>
-                <input id ="groundSelectRange" type="range" min="1" max="12" step="1" oninput="updateRangeNumber(this.value);">
-                <div class="groundNumPreview"></div>
             </div>
             <div class="date-container">
                 <div class="check-date">
