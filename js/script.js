@@ -72,6 +72,13 @@ changeDateCheck.addEventListener("change", () => {
     if (changeDateCheck.checked === true) {
         newDateField.disabled = false;
     } else {
+        if (wholeRadio.checked === true) {
+            sellByDate = moment().add(3, `months`).format("MM/DD/YY");
+            sellByDiv.textContent = sellByDate;
+        } else {
+            sellByDate = moment().add(1, `month`).format("MM/DD/YY");
+            sellByDiv.textContent = sellByDate;
+        }
         newDateField.value = "";
         newDateField.disabled = true;
     }

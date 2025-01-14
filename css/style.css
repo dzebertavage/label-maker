@@ -9,11 +9,14 @@ html {
 }
 
 .label-maker-container {
-    background-color: lightyellow;
+    background-color: #fff;
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: center;
+}
+
+input[type="date"] {
+    font-size: 1.2rem;
 }
 
 label {
@@ -26,6 +29,7 @@ label {
 
 .date-container {
     display: flex;
+    align-items: center;
 }
 
 .dropdown-container {
@@ -34,12 +38,12 @@ label {
 }
 
 .options-container {
-    background-color: lightgreen;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 3rem;
+    font-size: 1.2rem;
     padding: 2rem 0 0 2rem;
     height: 800px;
     max-height: 800px;
@@ -81,7 +85,6 @@ legend {
 }
 
 .label-preview-container {
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,8 +96,10 @@ legend {
 }
 
 .label-background {
+    -webkit-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.18);
     background-color: #fff;
-    border: 1px solid #8a8a8a;
+    border: none;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -114,7 +119,6 @@ legend {
 }
 
 .coffee-name {
-    background-color: lightgreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +140,6 @@ legend {
 }
 
 .sell-by-date {
-    background-color: lightsalmon;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,19 +148,16 @@ legend {
 }
 
 .sell-by-text {
-    background-color: aquamarine;
     flex-grow: 1;
     font-size: 3.5rem;
 }
 
 .sell-by {
-    background-color: rgb(255, 149, 10);
     flex-grow: 12;
     font-size: 3.5rem;
 }
 
 .phone-web {
-    background-color: lightgreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +166,6 @@ legend {
 }
 
 .coffee-weight {
-    background-color: lightsalmon;
     display: flex;
     flex-direction: column;
     justify-content: center;
